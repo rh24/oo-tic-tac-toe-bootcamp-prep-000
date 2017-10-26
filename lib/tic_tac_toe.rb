@@ -95,7 +95,7 @@ class TicTacToe
 
   def over?
     if draw?
-      return true
+      true
     elsif won?
       return true
     else
