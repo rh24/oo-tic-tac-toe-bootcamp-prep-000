@@ -75,8 +75,8 @@ class TicTacToe
     return false
   end
 
-  def full?(board)
-    board.none? do |token|
+  def full?
+    @board.none? do |token|
       if token == " "
         true
       else
