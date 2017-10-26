@@ -25,12 +25,12 @@ class TicTacToe
   def input_to_index(input)
     index = input.to_i - 1
   end
-  
+
   def index
     @index = index
   end
 
-  def move( token)
+  def move(token)
     @board[@index] = token
   end
 
