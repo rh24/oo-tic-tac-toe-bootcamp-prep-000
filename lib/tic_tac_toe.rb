@@ -103,12 +103,12 @@ class TicTacToe
     end
   end
 
-  def winner(board)
-    if won?(board)
+  def winner
+    if won?
       WIN_COMBINATIONS.each do |win|
-        if win.all?{|i| board[i] == "X"}
+        if win.all?{|i| @board[i] == "X"}
           return "X"
-        elsif win.all?{|i| board[i] == "O"}
+        elsif win.all?{|i| @board[i] == "O"}
           return "O"
         end
       end
