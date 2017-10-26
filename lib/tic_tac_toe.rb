@@ -129,4 +129,4 @@ class TicTacToe
 
 end
 
-TicTacToe.new(board)
+TicTacToe.new("game")
