@@ -26,9 +26,10 @@ class TicTacToe
   puts separator
   puts row3
   end
+  
   def input_to_index(input)
   input.to_i - 1
-end
+  end
 
   def move(board, index, token)
     board[index] = token
