@@ -129,5 +129,5 @@ class TicTacToe
 
 end
 
-game = TicTacToe.new("game")
+game = TicTacToe.new
 game.play
