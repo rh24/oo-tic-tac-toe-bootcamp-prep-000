@@ -99,9 +99,9 @@ end
 
   def over?(board)
     if draw?(board)
-      return true
+      # return true
     elsif won?(board)
-      return true
+      # return true
     else
       return false
     end
