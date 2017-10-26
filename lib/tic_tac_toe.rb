@@ -14,22 +14,21 @@ class TicTacToe
   [6,4,2
 ]
 
-  # def display_board(board)
-  # row1 = " #{board[0]} | #{board[1]} | #{board[2]} "
-  # row2 = " #{board[3]} | #{board[4]} | #{board[5]} "
-  # row3 = " #{board[6]} | #{board[7]} | #{board[8]} "
-  # separator = "-----------"
-  #
-  # puts row1
-  # puts separator
-  # puts row2
-  # puts separator
-  # puts row3
-  # end
+  def display_board(board)
+  row1 = " #{board[0]} | #{board[1]} | #{board[2]} "
+  row2 = " #{board[3]} | #{board[4]} | #{board[5]} "
+  row3 = " #{board[6]} | #{board[7]} | #{board[8]} "
+  separator = "-----------"
 
+  puts row1
+  puts separator
+  puts row2
+  puts separator
+  puts row3
+  end
   def input_to_index(input)
   input.to_i - 1
-  end
+end
 
   def move(board, index, token)
     board[index] = token
@@ -100,9 +99,9 @@ class TicTacToe
 
   def over?(board)
     if draw?(board)
-      # return true
+      return true
     elsif won?(board)
-      # return true
+      return true
     else
       return false
     end
