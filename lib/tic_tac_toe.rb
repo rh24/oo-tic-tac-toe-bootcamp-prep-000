@@ -130,3 +130,4 @@ class TicTacToe
 end
 
 game_01 = TicTacToe.new
+game_01.play
