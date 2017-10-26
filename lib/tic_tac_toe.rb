@@ -128,3 +128,5 @@ class TicTacToe
   end
 
 end
+
+game_01 = TicTacToe.new
