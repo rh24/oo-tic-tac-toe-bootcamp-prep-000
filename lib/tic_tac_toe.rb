@@ -64,11 +64,11 @@ class TicTacToe
     turn_count % 2 == 0 ? "X" : "O"
   end
 
-  def won?(board)
+  def won?
     WIN_COMBINATIONS.each do |win|
-      if win.all?{|i| board[i] == "X"}
+      if win.all?{|winning_index| @board[winning_index] == "X"}
         return win
-      elsif win.all?{|i| board[i] == "O"}
+      elsif win.all?{|winning_index| @board[winning_index] == "O"}
         return win
       end
     end
